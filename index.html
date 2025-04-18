@@ -19,7 +19,19 @@
  					<li class="menu"><a href="#news">News</a></li>
   					<li class="menu"><a href="#contact">Contact</a></li>
   					<li class="menu"><a href="#about">About</a></li>
-					<li class="open"><a href="#menu"><i class="fa-solid fa-plus"></i></a></li>
+				</ul>
+					<div id="mySidenav" class="sidenav">
+<a href="#menu"><i class="fa-solid fa-plus"></i></a></li>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">open</span>
+
 				</ul>
 			</div>
 
@@ -31,5 +43,16 @@
 
 		
 			<script src="https://kit.fontawesome.com/8a20b2d5d1.js" crossorigin="anonymous"></script>
+			<script>function openNav() {
+				  document.getElementById("mySidenav").style.width = "250px";
+				  document.getElementById("main").style.marginLeft = "250px";
+				  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+				}
+				function closeNav() {
+				  document.getElementById("mySidenav").style.width = "0";
+				  document.getElementById("main").style.marginLeft = "0";
+				  document.body.style.backgroundColor = "white";
+				}
+			</script>
 	</body>
 </html>
