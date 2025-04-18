@@ -183,6 +183,12 @@ li.menu {
   line-height: 3px;
 }
 
+li.open {
+float: right;
+margin: auto;
+font-size: 2em;
+}
+
 li a {
   display: block;
   padding: 20px;
